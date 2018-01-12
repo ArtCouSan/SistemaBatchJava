@@ -3,7 +3,6 @@ package com.teste.dao;
 import com.teste.config.ConnectAndClose;
 import com.teste.entity.Customer;
 import java.math.BigDecimal;
-import java.math.BigInteger;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -72,6 +71,12 @@ public class Customer_DAO {
 
     }
 
+    /**
+     * Lista os clientes pela regra de negocio
+     * @return
+     * @throws SQLException
+     * @throws ClassNotFoundException 
+     */
     public ArrayList<Customer> listar() throws SQLException, ClassNotFoundException {
 
         Connection connection  = null;
@@ -107,6 +112,12 @@ public class Customer_DAO {
 
     }
 
+    /**
+     * Retorna a media pela regra de negocio
+     * @return
+     * @throws SQLException
+     * @throws ClassNotFoundException 
+     */
     public BigDecimal media() throws SQLException, ClassNotFoundException {
 
         Connection connection = null;

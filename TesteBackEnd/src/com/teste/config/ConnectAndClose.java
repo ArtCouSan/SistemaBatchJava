@@ -16,8 +16,8 @@ public class ConnectAndClose {
      */
     public static Connection connection() throws SQLException, ClassNotFoundException {
        
-        Connection connection = null;  
-        
+        Connection connection = null;
+                
          if (connection == null || connection.isClosed()) {
 
 
@@ -55,5 +55,5 @@ public class ConnectAndClose {
         } catch (SQLException e) {
         }
     }
-            
+   
 }
